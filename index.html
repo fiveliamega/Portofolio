@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Fivelia Mega Mewengkang</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #f4f6fb;
+      color: #222;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(120deg, #1e40af, #60a5fa);
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+      animation: fadeDown 1s ease-in-out;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      opacity: 0.9;
+      animation: fadeUp 1.3s ease-in-out;
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1d4ed8;
+      border-left: 6px solid #60a5fa;
+      padding-left: 10px;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      margin: 8px 0;
+      position: relative;
+      padding-left: 20px;
+    }
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #2563eb;
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    /* CONTACT SECTION */
+    .contact {
+      text-align: center;
+      margin: 60px 0 40px;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 28px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+    .contact a:hover {
+      background: #1e3a8a;
+      transform: translateY(-3px);
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e40af;
+      color: #fff;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fivelia Mega Mewengkang</h1>
+    <p>Programmer | Software and Game Engineering Student</p>
+  </header>
+
+  <section>
+    <h2>Profile</h2>
+    <p>
+      I am a vocational high school student majoring in Software and Game Engineering. 
+      Passionate about programming, web development, and exploring new technologies. 
+      I love creating responsive, creative, and functional applications using HTML, CSS, JavaScript, PHP, and MySQL.
+    </p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <p><b>Web Programming Intern</b> – PDAM, Salatiga (Nov 2025 – Feb 2026)</p>
+    <ul>
+      <li>Assisted in developing and maintaining the company’s website using PHP and MySQL.</li>
+      <li>Improved website UI and optimized code for better performance.</li>
+      <li>Worked collaboratively with the IT team to solve technical issues.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><b>SMK Telekomunikasi Tunas Harapan</b> – Software and Game Engineering (2023 – Present)</p>
+    <p>Average Score: 85.25</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li><b>Programming:</b> HTML, CSS, JavaScript, PHP, MySQL, Java (Basic)</li>
+      <li><b>Tools:</b> Visual Studio Code, XAMPP, GitHub</li>
+      <li><b>Design:</b> Basic UI/UX, Canva</li>
+      <li><b>Soft Skills:</b> Teamwork, Communication, Time Management, Problem Solving</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <p><b>E-Commerce Website</b> (2024 – Present)</p>
+    <p>Developed an online store website with a product catalog, shopping cart, and checkout system using HTML, PHP, and MySQL.</p>
+
+    <p><b>UTBK Course Website</b> (2025)</p>
+    <p>Built an online learning platform for UTBK preparation with registration, material management, and user access using PHP and MySQL.</p>
+
+    <p><b>Portfolio Website</b> (2025)</p>
+    <p>Created a personal portfolio website to showcase projects and programming skills using HTML, CSS, and JavaScript.</p>
+  </section>
+
+  <section>
+    <h2>Organization</h2>
+    <ul>
+      <li><b>Member</b> – Flag Hoisting Troop (Paskibra), SMK Telekomunikasi Tunas Harapan (2023 – 2024)</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>📍 Karanggenang, Purwobinangun, Pakem, Sleman, Yogyakarta, Indonesia</p>
+    <p>📱 +62 8313 3178 532 | 📧 <a href="mailto:fiveliamega2@gmail.com">fiveliamega2@gmail.com</a></p>
+    <a href="https://github.com/fiveliamega/" target="_blank">My GitHub</a>
+  </section>
+
+  <footer>
+    © 2025 Fivelia Mega Mewengkang — All Rights Reserved
+  </footer>
+</body>
+</html>
