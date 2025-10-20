@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fivelia Mega Mewengkang | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* --- RESET & BASE --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #faf8f6;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* --- HEADER --- */
+    header {
+      background: linear-gradient(135deg, #c7d2fe, #fde2e4, #dbeafe);
+      text-align: center;
+      padding: 110px 20px 90px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      width: 300px;
+      height: 300px;
+      background: #e9d5ff;
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite alternate;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -80px;
+      right: -100px;
+      width: 250px;
+      height: 250px;
+      background: #bae6fd;
+      border-radius: 50%;
+      animation: float 5s ease-in-out infinite alternate-reverse;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0); }
+      to { transform: translateY(20px); }
+    }
+
+    /* --- BUBBLE TEXT EFFECT --- */
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #3b0764;
+      position: relative;
+      display: inline-block;
+      animation: bubbleUp 2s ease forwards;
+    }
+
+    @keyframes bubbleUp {
+      0% {
+        transform: scale(0.6);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    h1 span {
+      display: inline-block;
+      animation: bubble 0.6s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes bubble {
+      0% { transform: translateY(40px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    /* --- SECTION CONTAINER --- */
+    .container {
+      max-width: 1000px;
+      margin: 100px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      padding: 50px 40px;
+      margin-bottom: 60px;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    section:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #6d28d9;
+      margin-bottom: 25px;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: #c4b5fd;
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    ul {
+      list-style: none;
+      display: inline-block;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    ul li::before {
+      content: "✦";
+      color: #a78bfa;
+      position: absolute;
+      left: 0;
+      font-size: 14px;
+    }
+
+    /* --- PROJECT CARDS --- */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .project-card {
+      background: #f8fafc;
+      border-radius: 14px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      transition: 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.03);
+      background: #f1f5f9;
+    }
+
+    .project-card h3 {
+      color: #5b21b6;
+      margin-bottom: 10px;
+    }
+
+    /* --- CONTACT SECTION --- */
+    .contact {
+      background: linear-gradient(135deg, #e9d5ff, #bae6fd);
+      color: #3b0764;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    .contact a {
+      display: inline-block;
+      background: #fff;
+      color: #5b21b6;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 10px;
+      margin: 8px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    .contact a:hover {
+      background: #5b21b6;
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #ede9fe;
+      color: #3b0764;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      section { padding: 30px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      <span style="animation-delay:0s">F</span>
+      <span style="animation-delay:0.1s">i</span>
+      <span style="animation-delay:0.2s">v</span>
+      <span style="animation-delay:0.3s">e</span>
+      <span style="animation-delay:0.4s">l</span>
+      <span style="animation-delay:0.5s">i</span>
+      <span style="animation-delay:0.6s">a</span>
+      <span style="animation-delay:0.7s"> </span>
+      <span style="animation-delay:0.8s">M</span>
+      <span style="animation-delay:0.9s">e</span>
+      <span style="animation-delay:1s">g</span>
+      <span style="animation-delay:1.1s">a</span>
+      <span style="animation-delay:1.2s"> </span>
+      <span style="animation-delay:1.3s">M</span>
+      <span style="animation-delay:1.4s">e</span>
+      <span style="animation-delay:1.5s">w</span>
+      <span style="animation-delay:1.6s">e</span>
+      <span style="animation-delay:1.7s">n</span>
+      <span style="animation-delay:1.8s">g</span>
+      <span style="animation-delay:1.9s">k</span>
+      <span style="animation-delay:2s">a</span>
+      <span style="animation-delay:2.1s">n</span>
+      <span style="animation-delay:2.2s">g</span>
+    </h1>
+    <p>Frontend Developer • Creative Thinker • Game Tech Enthusiast</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>About Me</h2>
+      <p>I’m a creative technology student who loves combining design and code. I enjoy building aesthetic, user-friendly interfaces and exploring how design can shape digital experiences.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript, PHP</li>
+        <li>UI/UX Design with Figma</li>
+        <li>Version Control (GitHub)</li>
+        <li>Creativity & Team Collaboration</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Soft UI Portfolio</h3>
+          <p>A pastel-themed personal portfolio using pure HTML & CSS with animation effects.</p>
+        </div>
+        <div class="project-card">
+          <h3>Online Study App</h3>
+          <p>Responsive learning platform for students with quiz and progress tracking features.</p>
+        </div>
+        <div class="project-card">
+          <h3>Company Profile Web</h3>
+          <p>Professional business profile site with smooth transitions and modern layout.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <p>📧 fiveliamega2@gmail.com</p>
+      <p>📍 Yogyakarta, Indonesia</p>
+      <a href="mailto:fiveliamega2@gmail.com">Email Me</a>
+      <a href="https://github.com/fiveliamega" target="_blank">Visit My GitHub</a>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Fivelia Mega Mewengkang — Crafted with 💜 pastel love
+  </footer>
+</body>
+</html>
